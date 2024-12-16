@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EZ Travel - Tiket Pesawat & Booking Hotel</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+
+    <script>
+        window.onload = function() {
+            document.getElementById('promoPopup').style.display = 'block';
+        }
+        function closePopup() {
+            document.getElementById('promoPopup').style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+              EZ Travel
+            </div>
+            <div class="nav-links">
+             <a href="#home">
+              Home
+             </a>
+             <a href="#favorit">
+              Destinasi
+             </a>
+             <a href="#offers">
+              Booking
+             </a>
+             <a href="#contact">
+              Kontak
+             </a>
+            </div>
+           </div>
+        </header>
+        <section id="home">
+           <div class="content">
+            <div class="text">
+             <h1>
+              Let’s Enjoy Your Desired Trip With EZ Travel
+              <span>
+               🍁
+              </span>
+             </h1>
+             <div class="social-icons">
+                <a href="#">
+                 <i class="fab fa-facebook-f">
+                 </i>
+                </a>
+                <a href="#">
+                 <i class="fab fa-twitter">
+                 </i>
+                </a>
+                <a href="#">
+                 <i class="fab fa-instagram">
+                 </i>
+                </a>
+               </div>
+            </div>
+            <div class="image">
+             <img height="400" src="https://storage.googleapis.com/a1aa/image/uECwRqesh0yDWqjV0m4xtR2roDACMS3xJJFrEx58SfaUenynA.jpg" width="300"/>
+            </div>
+            <div class="aksen">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/024/136/386/small_2x/abstract-shape-background-free-png.png"/>
+            </div>
+           </div>
+           </section>
+    <div id="promoPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>EZ Travel</h2>
+            <p>Pesan tiket pesawat dan hotel lebih murah, Liburan lebih menyenangkan!</p>
+        </div>
+    </div>
+
+    <section id="favorit">
+        <h2>Destinasi Populer</h2>
+        <div class="container-destinasi">
+            <div class="carousel">
+                <div class="arrow" id="prev">&#10094;</div>
+                <div class="cards" id="cards">
+                    <div class="card">
+                        <img src="https://i.pinimg.com/originals/ab/ee/ae/abeeae0da2302ce9bab8d1b298fb5e39.jpg" alt="Ubud, Bali, Indonesia">
+                        <div class="card-content">
+                            <div class="card-title">Ubud</div>
+                            <div class="card-subtitle">Bali, Indonesia</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.squarespace-cdn.com/content/549d41a3e4b003c6ce131926/1501254614310-8ZZQEPNEY55H6ZC3Q9EE/Seminyak-104-20170421.jpg" alt="Seminyak, Bali, Indonesia">
+                        <div class="card-content">
+                            <div class="card-title">Seminyak</div>
+                            <div class="card-subtitle">Bali, Indonesia</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://www.gotravelaindonesia.com/wp-content/uploads/Pantai-Kuta-Bali-beach.jpg" alt="Kuta, Bali, Indonesia">
+                        <div class="card-content">
+                            <div class="card-title">Kuta</div>
+                            <div class="card-subtitle">Bali, Indonesia</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://picfiles.alphacoders.com/254/254165.jpg" alt="Raja Ampat, Papua, Indonesia">
+                        <div class="card-content">
+                            <div class="card-title">Raja Ampat</div>
+                            <div class="card-subtitle">Papua, Indonesia</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://mundomaya.travel/wp-content/uploads/2021/07/Tempat-Wisata-di-Labuan-Bajo.jpeg" alt="Labuan Bajo, NTT, Indonesia">
+                        <div class="card-content">
+                            <div class="card-title">Labuan Bajo</div>
+                            <div class="card-subtitle">NTT, Indonesia</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://static.thehoneycombers.com/wp-content/uploads/sites/2/2022/02/Bintan-Island-Chill-Cove-%40-Treasure-Bay.jpg" alt="Treasure bay, Bintan, Indonesia">
+                        <div class="card-content">
+                            <div class="card-title">Treasure Bay</div>
+                            <div class="card-subtitle">Bintan, Indonesia</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://www.gotravelly.com/blog/wp-content/uploads/2022/10/danau-toba.jpeg" alt="Danau Toba, Sumut, Indonesia">
+                        <div class="card-content">
+                            <div class="card-title">Danau Toba</div>
+                            <div class="card-subtitle">Sumut, Indonesia</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://potret123.com/wp-content/uploads/2020/03/tempat-wisata-sumba.jpg" alt="Sumba, NTT, Indonesia">
+                        <div class="card-content">
+                            <div class="card-title">Sumba</div>
+                            <div class="card-subtitle">NTT, Indonesia</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://bali.com/wp-content/uploads/2022/09/gili-meno-1200x800-1.jpg" alt="Gili Trawangan, NTB, Indonesia">
+                        <div class="card-content">
+                            <div class="card-title">Gili Trawangan</div>
+                            <div class="card-subtitle">NTB, Indonesia</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://3.bp.blogspot.com/-dCKUfd271vA/TsGn88A7LyI/AAAAAAAAAI8/n81xndtUOtQ/s1600/bunaken5.jpg" alt="Bunaken, Sulawesi Utara, Indonesia">
+                        <div class="card-content">
+                            <div class="card-title">Bunaken</div>
+                            <div class="card-subtitle">Sulawesi Utara, Indonesia</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow" id="next">&#10095;</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="offers">
+        <h2>Penawaran Kami</h2>
+        <div class="container-offers">
+            <div class="nav">
+                <a class="tab-link active" data-tab="hotel">Hotel</a>
+                <a class="tab-link" data-tab="tiket+pesawat">Hotel + Pesawat</a>
+            </div>
+            <div id="hotel" class="deals active">
+                <div class="deal">
+                    <img alt="Genio Hotel" height="300" src="https://pix8.agoda.net/hotelImages/162/1620314/1620314_17022816070051297829.jpg" width="400"/>
+                    <div class="deal-content">
+                        <h3>Genio Hotel Manado</h3>
+                        <p>Manado</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>3.5 stars</span>
+                        </div>
+                        <div class="price">Rp. 219.286 <span class="old-price">Rp. 253.659</span></div>
+                        <div class="discount">Rp. 34.373 off</div>
+                        <p class="date">/ Malam</p>
+                        <button class="btn-pesan">Pesan</button>
+                    </div>
+                </div>
+                <div class="deal">
+                    <img alt="Khas Parapat" height="300" src="https://pix8.agoda.net/hotelImages/728/72893/72893_17041211380052334604.jpg" width="400"/>
+                    <div class="deal-content">
+                        <h3>Khas Parapat</h3>
+                        <p>Parapat</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4 stars</span>
+                        </div>
+                        <div class="price">Rp. 549.532 <span class="old-price">Rp. 693.635</span></div>
+                        <div class="discount">Rp. 144,103 off</div>
+                        <p class="date">/ Malam</p>
+                        <button class="btn-pesan">Pesan</button>
+                    </div>
+                </div>
+                <div class="deal">
+                    <img alt="Waisai Beach Hotel" height="300" src="https://pix8.agoda.net/property/35607656/589611793/a377d19de2841cc4bf9846eeabdb7af1.jpg" width="400"/>
+                    <div class="deal-content">
+                        <h3>Waisai Beach hotel</h3>
+                        <p>Raja Ampat</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4 stars</span>
+                        </div>
+                        <div class="price">Rp. 421.238 <span class="old-price">Rp. 473.277</span></div>
+                        <div class="discount">Rp. 52.039 off</div>
+                        <p class="date">/ Malam</p>
+                        <button class="btn-pesan">Pesan</button>
+                    </div>
+                </div>
+                <div class="deal">
+                    <img alt="Bhuwana ubud Hotel" height="300" src="https://pix8.agoda.net/hotelImages/338070/-1/c30d8974fd1b8c8b8cd4da3eb94c674e.jpg" width="400"/>
+                    <div class="deal-content">
+                        <h3>Bhuwana Ubud Hotel</h3>
+                        <p>Ubud</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4</span>
+                        </div>
+                        <div class="price">Rp. 340.461<span class="old-price">Rp. 476.485</span></div>
+                        <div class="discount">Rp. 136.024 off</div>
+                        <p class="date">/ Malam</p>
+                        <button class="btn-pesan">Pesan</button>
+                    </div>
+                </div>
+            </div>
+            <div id="tiket+pesawat" class="deals">
+                <div class="deal">
+                    <img alt="Bhuwana Ubud Hotel" height="300" src="https://pix8.agoda.net/hotelImages/338070/-1/c30d8974fd1b8c8b8cd4da3eb94c674e.jpg" width="400"/>
+                    <div class="deal-content">
+                        <h3>Bhuwana Ubud Hotel + Flight</h3>
+                        <p>Ubud</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4 stars</span>
+                        </div>
+                        <p><i class="fas fa-plane"></i> Jakarta (CGK) - Denpasar (DPS)</p>
+                        <div class="price">Rp. 1.848.724 <span class="old-price">Rp. 46.640.152</span></div>
+                        <div class="discount">Rp. 44.791.428 off</div>
+                        <p class="date">/Orang (4 Malam)</p>
+                        <button class="btn-pesan">Pesan</button>
+                    </div>
+                </div>
+                <div class="deal">
+                    <img alt="Zasgo Hotel" height="300" src="https://pix8.agoda.net/hotelImages/289522/-1/3131c929972f8a6df27aa1c928dbe142.jpg" width="400"/>
+                    <div class="deal-content">
+                        <h3>Parapat View Hotel + Flight</h3>
+                        <p>Parapat</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>3.5 stars</span>
+                        </div>
+                        <p><i class="fas fa-plane"></i> Jakarta (CGK) - Medan (KNO)</p>
+                        <div class="price">Rp. 5.035.586 <span class="old-price">Rp. 5.476.662</span></div>
+                        <div class="discount">Rp. 441.076 off</div>
+                        <p class="date">/Orang (4 Malam)</p>
+                        <button class="btn-pesan">Pesan</button>
+                    </div>
+                </div>
+                <div class="deal">
+                    <img alt="Zasgo hotel" height="300" src="https://pix8.agoda.net/hotelImages/41186578/674454077/6f03f65405a5fa1b783fe12222e13a59.jpg" width="400"/>
+                    <div class="deal-content">
+                        <h3>Zasgo Hotel + Flight</h3>
+                        <p>Labuan Bajo</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4 stars</span>
+                        </div>
+                        <p><i class="fas fa-plane"></i> Jakarta (CGK) - Labuan Bajo (LBJ)</p>
+                        <div class="price">Rp. 4.101.926 <span class="old-price">Rp. 8.873.138</span></div>
+                        <div class="discount">Rp. 4.771.212 off</div>
+                        <p class="date">/Orang (4 Malam)</p>
+                        <button class="btn-pesan">Pesan</button>
+                    </div>
+                </div>
+                <div class="deal">
+                    <img alt="Swiss-Belhotel Maleosan Manado" height="300" src="https://pix8.agoda.net/hotelImages/148722/-1/48a9960d50f4f38f46a3b6a347b922c4.jpg" width="400"/>
+                    <div class="deal-content">
+                        <h3>Swiss-Belhotel Maleosan + Flight</h3>
+                        <p>Manado</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4 stars</span>
+                        </div>
+                        <p><i class="fas fa-plane"></i> Jakarta (CGK) - Manado (MDC,MNA)</p>
+                        <div class="price">Rp. 6.778.686 <span class="old-price">Rp. 8.945.169</span></div>
+                        <div class="discount">Rp. 2.116.483 off</div>
+                        <p class="date">/Orang (4 Malam)</p>
+                        <button class="btn-pesan">Pesan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <div class="form-container">
+                <h3>Message Us</h3>
+                <form action="" class="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" name="" id="" placeholder="Enter your Email..." required>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="write your message..." required></textarea>
+                    <input type="submit" value="Send" class="send-btn">
+                </form> 
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31732.607714021164!2d106.79357962600574!3d-6.1874570863521665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1733909448815!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Email</h4>
+            </div>
+            <div class="footer-col">
+                <ul><a href="#">eztravel@gmail.com</a></ul>
+                <p>&copy; 2024 EZ Travel. Semua hak dilindungi @Mr. Coki</p>
+            </div>
+            
+        </div>
+        
+    </footer>
+
+    <script>
+        const cards = document.getElementById('cards');
+        const prev = document.getElementById('prev');
+        const next = document.getElementById('next');
+
+        let scrollAmount = 0;
+
+        next.addEventListener('click', () => {
+            cards.scrollBy({ left: 220, behavior: 'smooth' });
+        });
+
+        prev.addEventListener('click', () => {
+            cards.scrollBy({ left: -220, behavior: 'smooth' });
+        });
+
+        document.querySelectorAll('.tab-link').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelectorAll('.tab-link').forEach(link => link.classList.remove('active'));
+                document.querySelectorAll('.deals').forEach(deal => deal.classList.remove('active'));
+                
+                this.classList.add('active');
+                document.getElementById(this.getAttribute('data-tab')).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
